@@ -1,0 +1,107 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  text-align: center;
+}
+
+.navbar {
+  display: inline-block;
+  width: 460px;
+}
+
+h1 {
+  font-family: 'Indie Flower';
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+a {
+  font-family: 'Indie Flower';
+  font-size: 15px;
+}
+
+.gameboard {
+  width: 360px;
+  margin: 30px auto 0 auto;
+}
+
+.row {
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+
+.ghost-button {
+  outline-color: white;
+  border-radius: 5px;
+  background: transparent;
+  font-family: 'Indie Flower';
+  transition: background-color 0.3s;
+}
+
+.ghost-button-inverted {
+  outline-color: #333333;
+  background-color: white;
+}
+
+.ghost-button:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.square{
+  float: left;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  padding-top: 35px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.bottom {
+  border-bottom: 1px solid #000;
+}
+
+.right{
+  border-right: 1px solid #000;
+}
+
+.alert-messages, .signout-message {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Indie Flower';
+  margin-top: 20px;
+
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.reset {
+  font-family: 'Indie Flower';
+  font-size: 25px;
+  width: 150px;
+  margin: 25px auto 0 auto;
+
+}
+
+#sign-out {
+  margin-top: 13px;
+}
+
+#getGameById {
+  margin: 25px auto 0 auto;
+  font-family: 'Indie Flower';
+  font-size: 25px;
+  width: 200px;
+}
+
+.games-played {
+  font-family: 'Indie Flower';
+  font-size: 25px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tic-Tac-Toe</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="assets/styles/index.scss">
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://use.fontawesome.com/057edf4fbf.js"></script>
+      <script src="dependencies.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+     <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+         <ul class="nav navbar-nav">
+
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign Up <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <form id="sign-up">
+                 <fieldset>
+                   <input type="text" name="credentials[email]" value="" placeholder="email">
+                   <input type="password" name="credentials[password]" value="" placeholder="password">
+                   <input type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+                   <input type="submit" name="submit" value="Sign up!">
+                 </fieldset>
+               </form>
+             </ul>
+           </li>
+
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign In <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <form id="sign-in">
+                 <fieldset>
+                   <input type="text" name="credentials[email]" value="" placeholder="email">
+                   <input type="password" name="credentials[password]" value="" placeholder="password">
+                   <input type="submit" name="submit" value="Sign in!">
+                 </fieldset>
+               </form>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Change Password <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <form id="change-password">
+                <fieldset>
+                  <input type="password" name="passwords[old]" value="" placeholder="Old Password">
+                  <input type="password" name="passwords[new]" value="" placeholder="New Password">
+                  <input type="submit" name="submit" value="Change Password">
+                </fieldset>
+              </form>
+            </ul>
+          </li>
+
+          <form id="sign-out">
+            <fieldset>
+              <input class="ghost-button ghost-button-inverted"type="submit" name="submit" value="Sign out!">
+            </fieldset>
+          </form>
+        </ul>
+      </div>
+    </nav>
+
+    <header><h1>Tic-Tac-Toe</h1></header>
+
+    <div class="gameboard">
+      <div class="row">
+        <div class="square bottom right sq1"  data-item="0"></div>
+        <div class="square bottom right sq2" data-item="1"></div>
+        <div class="square bottom sq3" data-item="2"></div>
+      </div>
+
+      <div class="row">
+        <div class="square bottom right sq4" data-item="3"></div>
+        <div class="square bottom right sq5" data-item="4"></div>
+        <div class="square bottom sq6" data-item="5"></div>
+      </div>
+
+      <div class="row">
+        <div class="square right sq7" data-item="6"></div>
+        <div class="square right sq8" data-item="7"></div>
+        <div class="square sq9" data-item="8"></div>
+      </div>
+    </div>
+
+
+    <div class="alert-messages"></div>
+
+    <div class=games-played></div>
+    <div class="signout-message" style="display: none;">You have been signed out! Thanks for playing.</div>
+    <button class="reset ghost-button">New Game</button>
+
+
+
+
+
+  </body>
+</html>
